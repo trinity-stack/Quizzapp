@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizApp | Take the Quiz</title>
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <header class="quiz-header">
+      <h1>QuizApp</h1>
+      <div class="quiz-info">
+        <span id="usernameDisplay"></span>
+        <span class="timer">⏱ <span id="time">15</span>s</span>
+      </div>
+    </header>
+
+    <div class="quiz-body">
+      <div id="question-box" class="question-box">
+        <h2 id="question">Question text</h2>
+        <ul id="options" class="options-list"></ul>
+      </div>
+
+      <div class="quiz-controls">
+        <button id="nextBtn" class="btn next-btn">Next Question</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizApp | Results</title>
+  <link rel="stylesheet" href="results.css" />
+</head>
+
+<body>
+  <canvas id="fireworksCanvas"></canvas>
+
+  <div class="results-container">
+    <header>
+      <h1>Quiz Results</h1>
+    </header>
+
+    <div class="score-box">
+      <img src="images/2.jpeg" alt="Results" class="result-image" />
+      <h2 id="greeting">Well Done!</h2>
+      <p id="summary">You scored 0 out of 0.</p>
+      <button id="saveBtn" class="btn save-btn">💾 Save Result</button>
+      <button id="retryBtn" class="btn retry-btn">🔁 Retry</button>
+    </div>
+    <section class="history">
+      <h3>📜 Score History</h3>
+      <div class="history-toggle">
+        <button id="userHistoryBtn" class="btn">My History</button>
+        <button id="globalHistoryBtn" class="btn">Global History</button>
+      </div>
+      <div id="historyList" class="history-list">Loading history...</div>
+    </section>
+
+    <section class="history">
+      <h3>📜 Score History</h3>
+      <div id="historyList" class="history-list">Loading history...</div>
+    </section>
+  </div>
+
+  <script src="results.js"></script>
+</body>
+
+</html>

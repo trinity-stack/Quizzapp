@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9fafc url("images/1.jpeg") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #333;
+}
+
+.results-container {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Header */
+header h1 {
+  font-size: 1.8rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+/* Score Box */
+.score-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.result-image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #2563eb;
+  font-size: 1.6rem;
+}
+
+#summary {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 1.4rem;
+  margin: 0.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.save-btn {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: #fff;
+}
+
+.retry-btn {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: #fff;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* History Section */
+.history {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.history h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #1e40af;
+}
+
+.history-list {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.6rem 0;
+  color: #333;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+/* Make the fireworks canvas cover the whole screen */
+#fireworksCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* allows clicks through canvas */
+  z-index: 10;
+}
+.results-container {
+  position: relative;
+  z-index: 20; /* above fireworks */
+}
